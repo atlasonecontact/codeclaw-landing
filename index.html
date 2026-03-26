@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeClaw - AI-Powered Code Review</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .animate-gradient { background-size:200% 200%; animation:gradient 6s ease infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+    .animate-float { animation:float 3s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-gray-950 text-white">
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-gray-900 to-blue-900 animate-gradient">
+    <div class="text-center px-6 max-w-4xl">
+      <div class="animate-float mb-8"><span class="text-6xl">🦞</span></div>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">CodeClaw</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8">AI-powered code review that catches bugs before your users do.</p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="#pricing" class="px-8 py-4 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all transform hover:scale-105">Get Started Free</a>
+        <a href="#features" class="px-8 py-4 border border-gray-600 hover:border-purple-400 rounded-xl font-semibold transition-all">See Features</a>
+      </div>
+    </div>
+  </section>
+  <!-- FEATURES -->
+  <section id="features" class="py-24 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-16">Why CodeClaw?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🔍</div><h3 class="text-xl font-bold mb-2">Deep Analysis</h3><p class="text-gray-400">AI reads every line. Finds bugs, security holes, and performance issues humans miss.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">⚡</div><h3 class="text-xl font-bold mb-2">Instant Reviews</h3><p class="text-gray-400">Get feedback in seconds, not hours. No more waiting for teammates to review PRs.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🛡️</div><h3 class="text-xl font-bold mb-2">Security First</h3><p class="text-gray-400">Detects vulnerabilities, injection risks, and auth bypasses before they hit production.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">📊</div><h3 class="text-xl font-bold mb-2">Quality Scores</h3><p class="text-gray-400">Every PR gets a quality score. Track codebase health over time.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🔗</div><h3 class="text-xl font-bold mb-2">GitHub Native</h3><p class="text-gray-400">Installs in 30 seconds. Works with your existing GitHub workflow.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🤖</div><h3 class="text-xl font-bold mb-2">Auto-Fix Suggestions</h3><p class="text-gray-400">One-click fixes for common issues. CodeClaw writes the patch, you approve.</p></div>
+    </div>
+  </section>
+  <!-- V1: Pricing and Contact coming in next push -->
+</body>
+</html>
