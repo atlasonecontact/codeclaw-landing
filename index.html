@@ -6,10 +6,10 @@
   <title>CodeClaw - AI-Powered Code Review</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    .animate-gradient { background-size:200% 200%; animation:gradient 6s ease infinite; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
-    .animate-float { animation:float 3s ease-in-out infinite; }
+    @keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .animate-gradient{background-size:200% 200%;animation:gradient 6s ease infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .animate-float{animation:float 3s ease-in-out infinite}
   </style>
 </head>
 <body class="bg-gray-950 text-white">
@@ -18,25 +18,102 @@
     <div class="text-center px-6 max-w-4xl">
       <div class="animate-float mb-8"><span class="text-6xl">🦞</span></div>
       <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">CodeClaw</h1>
-      <p class="text-xl md:text-2xl text-gray-300 mb-8">AI-powered code review that catches bugs before your users do.</p>
+      <p class="text-xl md:text-2xl text-gray-200 mb-8 drop-shadow-lg">AI-powered code review that catches bugs before your users do.</p>
       <div class="flex gap-4 justify-center flex-wrap">
-        <a href="#pricing" class="px-8 py-4 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all transform hover:scale-105">Get Started Free</a>
-        <a href="#features" class="px-8 py-4 border border-gray-600 hover:border-purple-400 rounded-xl font-semibold transition-all">See Features</a>
+        <a href="#pricing" class="px-8 py-4 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg shadow-purple-500/25">Get Started Free</a>
+        <a href="#features" class="px-8 py-4 border border-gray-500 hover:border-purple-400 rounded-xl font-semibold transition-all hover:bg-white/5">See Features</a>
       </div>
     </div>
   </section>
+
   <!-- FEATURES -->
   <section id="features" class="py-24 px-6 max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-16">Why CodeClaw?</h2>
+    <h2 class="text-4xl font-bold text-center mb-4">Why CodeClaw?</h2>
+    <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">Everything you need to ship better code, faster.</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🔍</div><h3 class="text-xl font-bold mb-2">Deep Analysis</h3><p class="text-gray-400">AI reads every line. Finds bugs, security holes, and performance issues humans miss.</p></div>
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">⚡</div><h3 class="text-xl font-bold mb-2">Instant Reviews</h3><p class="text-gray-400">Get feedback in seconds, not hours. No more waiting for teammates to review PRs.</p></div>
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🛡️</div><h3 class="text-xl font-bold mb-2">Security First</h3><p class="text-gray-400">Detects vulnerabilities, injection risks, and auth bypasses before they hit production.</p></div>
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">📊</div><h3 class="text-xl font-bold mb-2">Quality Scores</h3><p class="text-gray-400">Every PR gets a quality score. Track codebase health over time.</p></div>
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🔗</div><h3 class="text-xl font-bold mb-2">GitHub Native</h3><p class="text-gray-400">Installs in 30 seconds. Works with your existing GitHub workflow.</p></div>
-      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all"><div class="text-4xl mb-4">🤖</div><h3 class="text-xl font-bold mb-2">Auto-Fix Suggestions</h3><p class="text-gray-400">One-click fixes for common issues. CodeClaw writes the patch, you approve.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">🔍</div><h3 class="text-xl font-bold mb-2">Deep Analysis</h3><p class="text-gray-400">AI reads every line. Finds bugs, security holes, and performance issues humans miss.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">⚡</div><h3 class="text-xl font-bold mb-2">Instant Reviews</h3><p class="text-gray-400">Get feedback in seconds, not hours. No more waiting for teammates.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">🛡️</div><h3 class="text-xl font-bold mb-2">Security First</h3><p class="text-gray-400">Detects vulnerabilities, injection risks, and auth bypasses.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">📊</div><h3 class="text-xl font-bold mb-2">Quality Scores</h3><p class="text-gray-400">Every PR gets a quality score. Track codebase health over time.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">🔗</div><h3 class="text-xl font-bold mb-2">GitHub Native</h3><p class="text-gray-400">Installs in 30 seconds. Works with your existing workflow.</p></div>
+      <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-purple-500 transition-all hover:-translate-y-1"><div class="text-4xl mb-4">🤖</div><h3 class="text-xl font-bold mb-2">Auto-Fix</h3><p class="text-gray-400">One-click fixes. CodeClaw writes the patch, you approve.</p></div>
     </div>
   </section>
-  <!-- V1: Pricing and Contact coming in next push -->
-</body>
-</html>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-24 px-6 bg-gray-900/50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-4">Simple Pricing</h2>
+      <p class="text-gray-400 text-center mb-16">Start free. Scale when ready.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Free -->
+        <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+          <h3 class="text-lg font-semibold text-gray-400 mb-2">Free</h3>
+          <div class="text-4xl font-bold mb-6">$0<span class="text-lg text-gray-500">/mo</span></div>
+          <ul class="space-y-3 text-gray-300 mb-8">
+            <li>✅ 50 reviews/month</li>
+            <li>✅ Public repos only</li>
+            <li>✅ Basic analysis</li>
+            <li>❌ Auto-fix</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 border border-gray-700 rounded-xl hover:border-purple-400 transition-all">Get Started</a>
+        </div>
+        <!-- Pro -->
+        <div class="bg-gray-900 rounded-2xl p-8 border-2 border-purple-500 relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-sm px-4 py-1 rounded-full">Most Popular</div>
+          <h3 class="text-lg font-semibold text-purple-400 mb-2">Pro</h3>
+          <div class="text-4xl font-bold mb-6">$29<span class="text-lg text-gray-500">/mo</span></div>
+          <ul class="space-y-3 text-gray-300 mb-8">
+            <li>✅ Unlimited reviews</li>
+            <li>✅ Private repos</li>
+            <li>✅ Deep analysis</li>
+            <li>✅ Auto-fix suggestions</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all">Start Free Trial</a>
+        </div>
+        <!-- Enterprise -->
+        <div class="bg-gray-900 rounded-2xl p-8 border border-gray-800">
+          <h3 class="text-lg font-semibold text-gray-400 mb-2">Enterprise</h3>
+          <div class="text-4xl font-bold mb-6">Custom</div>
+          <ul class="space-y-3 text-gray-300 mb-8">
+            <li>✅ Everything in Pro</li>
+            <li>✅ SSO & SAML</li>
+            <li>✅ Custom rules</li>
+            <li>✅ Dedicated support</li>
+          </ul>
+          <a href="#contact" class="block text-center py-3 border border-gray-700 rounded-xl hover:border-purple-400 transition-all">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 px-6 max-w-2xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-4">Join the Waitlist</h2>
+    <p class="text-gray-400 text-center mb-12">Be the first to know when CodeClaw launches.</p>
+    <form id="waitlist-form" class="space-y-6" onsubmit="return handleSubmit(event)">
+      <div>
+        <label class="block text-sm text-gray-400 mb-2">Email</label>
+        <input type="email" id="email" required placeholder="you@company.com" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:border-purple-500 focus:outline-none transition-all text-white">
+        <p id="email-error" class="text-red-400 text-sm mt-1 hidden">Please enter a valid email address.</p>
+      </div>
+      <div>
+        <label class="block text-sm text-gray-400 mb-2">Company (optional)</label>
+        <input type="text" placeholder="Acme Inc." class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-xl focus:border-purple-500 focus:outline-none transition-all text-white">
+      </div>
+      <button type="submit" class="w-full py-4 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all transform hover:scale-[1.02] shadow-lg shadow-purple-500/25">
+        Join Waitlist 🦞
+      </button>
+      <p id="success-msg" class="text-green-400 text-center hidden">You're on the list! We'll be in touch.</p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 px-6 border-t border-gray-800 text-center text-gray-500 text-sm">
+    <p>🦞 CodeClaw — Built at BuildersClaw Hackathon © 2026</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementByI
